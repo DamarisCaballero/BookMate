@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - BookMate</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Libros</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="#">Mi Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="catalog">
+            <h2>Explora el Catálogo Completo</h2>
+            <!-- Barra de búsqueda -->
+            <input type="text" id="search-bar" placeholder="Buscar por título o autor...">
+    
+            <!-- Filtros -->
+            <div class="filters">
+                <label for="genre-filter">Filtrar por Género:</label>
+                <select id="genre-filter">
+                    <option value="">Todos los Géneros</option>
+                    <option value="science_fiction">Ciencia Ficción</option>
+                    <option value="fantasy">Fantasía</option>
+                    <option value="romance">Romance</option>
+                    <!-- Agregar más géneros si es necesario -->
+                </select>
+    
+                <label for="year-filter">Filtrar por Año:</label>
+                <select id="year-filter">
+                    <option value="">Todos los Años</option>
+                    <!-- Rellenar dinámicamente con años -->
+                </select>
+            </div>
+    
+            <div class="book-list">
+                <!-- Los libros se cargarán aquí -->
+            </div>
+        </section>
+    
+        <!-- Sección de Favoritos -->
+        <section id="favorites">
+            <h2>Mis Favoritos</h2>
+            <div class="favorite-list">
+                <!-- Los libros favoritos se mostrarán aquí -->
+            </div>
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <p>&copy; 2024 BookMate</p>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+    background-color: #f7fff7; /* Fondo claro */
+    color: #1a535c; /* Texto oscuro para buena legibilidad */
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f76c6c; /* Títulos en coral */
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Estilo para botones */
+button {
+    background-color: #f76c6c;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffe66d;
+}
+
+/* Estilos para el encabezado *******************/
+header {
+    background-image: url('../assets/fondo4.png'); /* Ruta a la imagen de fondo */
+    background-size: cover; /* Ajustar imagen para cubrir el contenedor */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    padding: 6rem 0;
+    text-align: center;
+    text-align: center;
+    color: white; /* Color del texto sobre la imagen */
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido para el menú */
+    padding: 1rem 0;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style-type: none; /* Eliminar puntos de lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrar los elementos del menú */
+}
+
+nav ul li {
+    margin: 0 2rem; /* Espacio entre los elementos del menú */
+}
+
+nav ul li a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: white; /* Color del texto */
+    font-size: 1.5rem; /* Aumentar tamaño del texto */
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Añadir padding alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados en los enlaces */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffe66d; /* Cambiar color en hover */
+    border-bottom: 2px solid #ffe66d; /* Subrayado en hover */
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header p {
+    font-size: 3rem;
+}
+
+
+/* Estilos para el encabezado fin ******************* */
+
+/* Sección de filtros */
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+#genre-filter, #year-filter {
+    padding: 0.7rem;
+    background-color: #4ecdc4;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Cards de libros */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #4ecdc4; /* Subtítulos en verde turquesa */
+}
+
+.book-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.book-card button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book-card button:hover {
+    background-color: #555;
+}
+
+/* Sección de favoritos */
+.favorite-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    background-color: #f76c6c;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.favorite-list h2 {
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
