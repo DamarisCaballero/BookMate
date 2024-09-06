@@ -1,0 +1,56 @@
+/* Estilos específicos para la página de perfil */
+
+/* Información del perfil */
+.profile-info {
+    background-color: #f7fff7;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.profile-info h2 {
+    font-size: 2rem;
+    color: #1a535c;
+}
+
+.profile-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Configuración del perfil */
+.profile-settings {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.profile-settings h2 {
+    font-size: 2rem;
+    color: #1a535c;
+}
+
+.profile-settings form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile-settings input {
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.profile-settings button {
+    background-color: #4ecdc4;
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-settings button:hover {
+    background-color: #3b8d8f;
+}

@@ -1,0 +1,64 @@
+/* Estilos específicos para la página del catálogo */
+
+/* Sección de filtros */
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+#genre-filter, #year-filter {
+    padding: 0.7rem;
+    background-color: #4ecdc4;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Cards de libros */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #4ecdc4; /* Subtítulos en verde turquesa */
+}
+
+.book-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.book-card button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book-card button:hover {
+    background-color: #555;
+}
